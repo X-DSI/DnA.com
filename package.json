@@ -3,7 +3,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "build": "next --openssl-legacy-provider build",
+    "build": "next build",
     "start": "next --openssl-legacy-provider start",
     "sync-guest-list": "node ./scripts/guestListFromCsv.js guest_list.csv > pages/guest_list.json",
     "now:deploy": "yarn sync-guest-list && now --prod"
